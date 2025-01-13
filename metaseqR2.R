@@ -1,4 +1,6 @@
 #This script performs differential expression analysis between the 2 groups BynRas vs Byn.
+#Input file: A txt file containing 5 columns based on the experimental setup. The first column MUST contain UNIQUE sample names. The second column MUST contain the raw BAM/BED files WITH their full path. The third column MUST contain the biological condition where each of the samples in the first column should belong to. The fourth column contains the keyword "single" for single-end reads. The fifth column contains the keyword "forward" based on the stranded read assignment.
+
 
 # Define directory paths
 the.path <- "/media/samba/hatzis_lab/apidianakis/BynRas/analysis"  # Base directory for the analysis
