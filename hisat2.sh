@@ -1,4 +1,4 @@
-#!/bin/bash
+#This script performs the alignment of the reads to the hg38 in two steps.
 
 # Directory variables
 HOME_PATH=/media/samba/hatzis_lab/apidianakis/BynRas
@@ -14,8 +14,6 @@ BEDTOOLS_COMMAND=/home/alexandros/tools/bedtools2/bin/bedtools
 # Reference Genome Index
 HISAT2_INDEXES=/home/alexandros/tools/hisat2/hisat2-2.1.0/indexes/dm6/dm6
 TRANSCRIPTOME_INDEX=/media/raid/users/alexandros/tools/hisat2/hisat2-2.1.0/indexes/dm6_spliced_sites.txt
-#the path to the dir containing the hisat2 reference genome index; it is required to have that name and value (see p.5 of manual and getting started) 
-#as HISAT2 will look here for the indexes; the "/genome" is the basename is the name of any of the index files up to but not including the final .1.ht2 / etc.
 
 #Bowtie Index
 BOWTIE2_INDEX=/media/raid/resources/igenomes/Drosophila_melanogaster/UCSC/dm6/Sequence/Bowtie2Index/genome # the path and lastly the basename where ref.genome index is stored
